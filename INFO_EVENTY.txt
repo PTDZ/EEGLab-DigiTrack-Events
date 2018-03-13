@@ -1,0 +1,34 @@
+
+WERSJA SHORT:
+7 eventów | dwie informacje; czasy dla: 1 statku/ odpowiedzi
+
+ATT_CRT, ATT_DNT, ATT_WRG -> próby "Attention" (match + non_match razem), czas wyœwietlenia 1 statku
+CON_CRT, CON_DNT, CON_WRG -> próby "Control" (control_vertical + control_ horizontal razem), czas wyœwietlenia 1 statku
+Respons - czas udzielenia odpowiedzi (*)
+
+(* respons(e) bez e, ¿eby liczba znaków dla wszystkich eventów by³a równa)
+-------------------------
+
+WERSJA FULL:
+Wiele eventów | ka¿dy znak/lub kilka znaków koduje/¹ inn¹ informacjê; czasy dla pocz¹tku próby/ 1 statku/ 2 statku/ odpowiedzi
+
+W 4 kolejnych eventach zakodowana jest jedna próba mamy po kolei S_kody (pocz¹tek próby), T_kody (1 statek), P_kody (2 statek), R_kody (odpowiedŸ)
+Przyk³adowy event: S_1113a13a
+
+1 znak:
+S: ITI_Time (kolejny trial/próba - czas pojawienia siê)
+R - Key_Time (odpowiedŸ - pojawienie siê)
+P - Probe_Time (1 statek - pojawienie siê)
+T - T (2 statek - pojawienie siê)
+
+2 znak (po _): Typ próby (TrialType)
+1: match; 0: non_match; 2: control_horizontal; 3: control_vertical
+
+3 znak: Poprawnoœæ odpowiedzi (Accuracy)
+ correct: 1, wrong: 0; dont know: 2
+
+4-5-6 znak: SampleShip, nazwa wyœwietlonego statku
+nazwy by³y nadane wczeœniej np. 13a, 05a
+
+7-8-9 znak: TargetShip nazwa wyœwietlonego statku
+nazwy by³y nadane wczeœniej; jeœli zamiast statku jest elipsa - kod "ell"

@@ -7,10 +7,10 @@
 
 ***
 
-(1) Adding events with EEGlab from Elmiko DigiTrack .csv and .evx files
-	- Calculates events latency from .CSV logfiles (computer's time) to milliseconds
-	- Creates .txt files with event list
-	- Adds events to the EEG signal using EEGlab
+Adds events with EEGlab from Elmiko DigiTrack .csv and .evx files
+- Calculates events latency from .CSV logfiles (computer's time) to milliseconds
+- Creates .txt files with event list
+- Adds events to the EEG signal using EEGlab
 	
 ***
 

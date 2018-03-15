@@ -5,10 +5,14 @@
 - For internal IBD "Ships" project, but can be customized for any other project
 - All scripts regarding working with .EDF/.CSV files from Elmiko DigiTrack system
 
+***
+
 (1) Adding events with EEGlab from Elmiko DigiTrack .csv and .evx files
 	- Calculates events latency from .CSV logfiles (computer's time) to milliseconds
 	- Creates .txt files with event list
 	- Adds events to the EEG signal using EEGlab
+	
+***
 
 **INFO_EVENTY.txt** -> Instructions in polish for understanding events codes
 - Comments inside the scripts are for now in polish only.

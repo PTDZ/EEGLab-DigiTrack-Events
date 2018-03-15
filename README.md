@@ -21,7 +21,8 @@ Adds events with EEGlab from Elmiko DigiTrack .csv and .evx files
 - struct2File.m and xml2struct.m (added here)
 
 **Event_list_SHORT.m**
-Input:
+
+**Input**:
 - .csv file from the DigiTrack "Ships" experiment
 - .evx file from the DigiTrack experiment 
 
